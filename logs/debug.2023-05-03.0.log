@@ -1,0 +1,49 @@
+2023-05-03 22:58:32.403 [http-nio-8088-exec-2] DEBUG com.sy.mapper.TestMapper.getList - ==>  Preparing: select count(0) from (SELECT * FROM person) as total 
+2023-05-03 22:58:32.435 [http-nio-8088-exec-2] DEBUG com.sy.mapper.TestMapper.getList - ==> Parameters: 
+2023-05-03 22:58:32.461 [http-nio-8088-exec-2] DEBUG com.sy.mapper.TestMapper.getList - ==>  Preparing: SELECT * FROM person limit 0, 10 
+2023-05-03 22:58:32.462 [http-nio-8088-exec-2] DEBUG com.sy.mapper.TestMapper.getList - ==> Parameters: 
+2023-05-03 22:58:32.472 [http-nio-8088-exec-2] DEBUG com.sy.mapper.TestMapper.getList - <==      Total: 4
+2023-05-03 23:00:51.267 [http-nio-8088-exec-5] DEBUG com.sy.mapper.TestMapper.delete - ==>  Preparing: DELETE FROM person WHERE id=? 
+2023-05-03 23:00:51.270 [http-nio-8088-exec-5] DEBUG com.sy.mapper.TestMapper.delete - ==> Parameters: 154e503ab34045ba9e1cdbb3e7303a7b(String)
+2023-05-03 23:00:51.276 [http-nio-8088-exec-5] DEBUG com.sy.mapper.TestMapper.delete - <==    Updates: 0
+2023-05-03 23:00:57.260 [http-nio-8088-exec-7] DEBUG com.sy.mapper.TestMapper.getObject - ==>  Preparing: SELECT * FROM person WHERE ID=? 
+2023-05-03 23:00:57.260 [http-nio-8088-exec-7] DEBUG com.sy.mapper.TestMapper.getObject - ==> Parameters: 154e503ab34045ba9e1cdbb3e7303a7b(String)
+2023-05-03 23:00:57.262 [http-nio-8088-exec-7] DEBUG com.sy.mapper.TestMapper.getObject - <==      Total: 0
+2023-05-03 23:01:01.131 [http-nio-8088-exec-6] DEBUG com.sy.mapper.TestMapper.getList - ==>  Preparing: select count(0) from (SELECT * FROM person) as total 
+2023-05-03 23:01:01.133 [http-nio-8088-exec-6] DEBUG com.sy.mapper.TestMapper.getList - ==> Parameters: 
+2023-05-03 23:01:01.137 [http-nio-8088-exec-6] DEBUG com.sy.mapper.TestMapper.getList - ==>  Preparing: SELECT * FROM person limit 0, 10 
+2023-05-03 23:01:01.137 [http-nio-8088-exec-6] DEBUG com.sy.mapper.TestMapper.getList - ==> Parameters: 
+2023-05-03 23:01:01.140 [http-nio-8088-exec-6] DEBUG com.sy.mapper.TestMapper.getList - <==      Total: 4
+2023-05-03 23:01:06.484 [http-nio-8088-exec-9] DEBUG com.sy.mapper.TestMapper.getObject - ==>  Preparing: SELECT * FROM person WHERE ID=? 
+2023-05-03 23:01:06.484 [http-nio-8088-exec-9] DEBUG com.sy.mapper.TestMapper.getObject - ==> Parameters: e141a20e25f34db980957a9038254f23(String)
+2023-05-03 23:01:06.486 [http-nio-8088-exec-9] DEBUG com.sy.mapper.TestMapper.getObject - <==      Total: 1
+2023-05-03 23:01:18.185 [http-nio-8088-exec-8] DEBUG com.sy.mapper.TestMapper.getObject - ==>  Preparing: SELECT * FROM person WHERE ID=? 
+2023-05-03 23:01:18.186 [http-nio-8088-exec-8] DEBUG com.sy.mapper.TestMapper.getObject - ==> Parameters: 154e503ab34045ba9e1cdbb3e7303a7b(String)
+2023-05-03 23:01:18.187 [http-nio-8088-exec-8] DEBUG com.sy.mapper.TestMapper.getObject - <==      Total: 0
+2023-05-03 23:02:09.273 [http-nio-8088-exec-10] DEBUG com.sy.mapper.TestMapper.getObject - ==>  Preparing: SELECT * FROM person WHERE ID=? 
+2023-05-03 23:02:09.273 [http-nio-8088-exec-10] DEBUG com.sy.mapper.TestMapper.getObject - ==> Parameters: 154e503ab34045ba9e1cdbb3e7303a7b(String)
+2023-05-03 23:02:09.274 [http-nio-8088-exec-10] DEBUG com.sy.mapper.TestMapper.getObject - <==      Total: 0
+2023-05-03 23:02:22.484 [http-nio-8088-exec-10] DEBUG com.sy.mapper.TestMapper.getObject - ==>  Preparing: SELECT * FROM person WHERE ID=? 
+2023-05-03 23:02:22.485 [http-nio-8088-exec-10] DEBUG com.sy.mapper.TestMapper.getObject - ==> Parameters: 154e503ab34045ba9e1cdbb3e7303a7b(String)
+2023-05-03 23:02:22.486 [http-nio-8088-exec-10] DEBUG com.sy.mapper.TestMapper.getObject - <==      Total: 0
+2023-05-03 23:05:50.168 [http-nio-8088-exec-1] DEBUG com.sy.mapper.TestMapper.getObject - ==>  Preparing: SELECT * FROM person WHERE ID=? 
+2023-05-03 23:05:50.576 [http-nio-8088-exec-1] DEBUG com.sy.mapper.TestMapper.getObject - ==> Parameters: 154e503ab34045ba9e1cdbb3e7303a7b(String)
+2023-05-03 23:05:50.876 [http-nio-8088-exec-1] DEBUG com.sy.mapper.TestMapper.getObject - <==      Total: 0
+2023-05-03 23:06:07.535 [http-nio-8088-exec-4] DEBUG com.sy.mapper.TestMapper.getObject - ==>  Preparing: SELECT * FROM person WHERE ID=? 
+2023-05-03 23:06:07.538 [http-nio-8088-exec-4] DEBUG com.sy.mapper.TestMapper.getObject - ==> Parameters: 154e503ab34045ba9e1cdbb3e7303a7b(String)
+2023-05-03 23:06:07.541 [http-nio-8088-exec-4] DEBUG com.sy.mapper.TestMapper.getObject - <==      Total: 0
+2023-05-03 23:06:24.897 [http-nio-8088-exec-3] DEBUG com.sy.mapper.TestMapper.getObject - ==>  Preparing: SELECT * FROM person WHERE ID=? 
+2023-05-03 23:06:24.900 [http-nio-8088-exec-3] DEBUG com.sy.mapper.TestMapper.getObject - ==> Parameters: 682f0476c84a4991adfe2714d27dafb6(String)
+2023-05-03 23:06:24.925 [http-nio-8088-exec-3] DEBUG com.sy.mapper.TestMapper.getObject - <==      Total: 1
+2023-05-03 23:06:36.313 [http-nio-8088-exec-5] DEBUG com.sy.mapper.TestMapper.getObject - ==>  Preparing: SELECT * FROM person WHERE ID=? 
+2023-05-03 23:06:36.314 [http-nio-8088-exec-5] DEBUG com.sy.mapper.TestMapper.getObject - ==> Parameters: 682f0476c84a4991adfe2714d27dafb6(String)
+2023-05-03 23:06:36.316 [http-nio-8088-exec-5] DEBUG com.sy.mapper.TestMapper.getObject - <==      Total: 1
+2023-05-03 23:07:14.026 [http-nio-8088-exec-2] DEBUG com.sy.mapper.TestMapper.getObject - ==>  Preparing: SELECT * FROM person WHERE ID=? 
+2023-05-03 23:07:14.097 [http-nio-8088-exec-2] DEBUG com.sy.mapper.TestMapper.getObject - ==> Parameters: 682f0476c84a4991adfe2714d27dafb6(String)
+2023-05-03 23:07:14.145 [http-nio-8088-exec-2] DEBUG com.sy.mapper.TestMapper.getObject - <==      Total: 1
+2023-05-03 23:07:17.521 [http-nio-8088-exec-3] DEBUG com.sy.mapper.TestMapper.getObject - ==>  Preparing: SELECT * FROM person WHERE ID=? 
+2023-05-03 23:07:17.522 [http-nio-8088-exec-3] DEBUG com.sy.mapper.TestMapper.getObject - ==> Parameters: 154e503ab34045ba9e1cdbb3e7303a7b(String)
+2023-05-03 23:07:17.523 [http-nio-8088-exec-3] DEBUG com.sy.mapper.TestMapper.getObject - <==      Total: 0
+2023-05-03 23:07:20.295 [http-nio-8088-exec-4] DEBUG com.sy.mapper.TestMapper.getObject - ==>  Preparing: SELECT * FROM person WHERE ID=? 
+2023-05-03 23:07:20.296 [http-nio-8088-exec-4] DEBUG com.sy.mapper.TestMapper.getObject - ==> Parameters: 682f0476c84a4991adfe2714d27dafb6(String)
+2023-05-03 23:07:20.299 [http-nio-8088-exec-4] DEBUG com.sy.mapper.TestMapper.getObject - <==      Total: 1

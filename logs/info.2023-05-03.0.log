@@ -1,0 +1,253 @@
+2023-05-03 22:58:13.124 [main] INFO  com.sy.SyApplication - Starting SyApplication using Java 1.8.0_301 on shuYan with PID 14388 (D:\Project\sy\target\classes started by 15495 in D:\Project\sy)
+2023-05-03 22:58:13.127 [main] INFO  com.sy.SyApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-03 22:58:14.525 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2023-05-03 22:58:14.535 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2023-05-03 22:58:14.536 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-03 22:58:14.589 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-05-03 22:58:14.727 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-03 22:58:14.728 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1509 ms
+2023-05-03 22:58:15.275 [main] INFO  com.sy.config.AopLogger - method: public void com.sy.config.Config.configureMessageConverters(java.util.List)
+2023-05-03 22:58:15.276 [main] INFO  com.sy.config.AopLogger - total time: 3ms
+2023-05-03 22:58:15.280 [main] INFO  com.sy.config.AopLogger - method response: null
+2023-05-03 22:58:15.423 [main] INFO  com.sy.config.AopLogger - method: public void com.sy.config.Config.addCorsMappings(org.springframework.web.servlet.config.annotation.CorsRegistry)
+2023-05-03 22:58:15.423 [main] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 22:58:15.424 [main] INFO  com.sy.config.AopLogger - method response: null
+2023-05-03 22:58:15.666 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2023-05-03 22:58:15.687 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2023-05-03 22:58:15.697 [main] INFO  com.sy.SyApplication - Started SyApplication in 3.299 seconds (JVM running for 4.451)
+2023-05-03 22:58:15.699 [main] INFO  com.sy.config.AopLogger - method: public void com.sy.config.RunnerConfig.run(org.springframework.boot.ApplicationArguments) throws java.lang.Exception
+2023-05-03 22:58:15.699 [main] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 22:58:15.844 [main] INFO  com.sy.core.DataBase - mysql init success...
+2023-05-03 22:58:15.844 [main] INFO  com.sy.config.AopLogger - method response: null
+2023-05-03 22:58:32.081 [http-nio-8088-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-03 22:58:32.081 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-03 22:58:32.083 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-05-03 22:58:32.246 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - url: /test/getList
+2023-05-03 22:58:32.246 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - method: public com.sy.util.Result com.sy.base.BaseController.getList(com.sy.mybatis.domain.Page)
+2023-05-03 22:58:32.246 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 22:58:32.250 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - url: /test/getList
+2023-05-03 22:58:32.251 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - method: public com.sy.mybatis.domain.SimplePage com.sy.base.BaseService.getList(com.sy.mybatis.domain.Page)
+2023-05-03 22:58:32.251 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - total time: 1ms
+2023-05-03 22:58:32.257 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - url: /test/getList
+2023-05-03 22:58:32.257 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - method: public abstract java.util.List com.sy.base.BaseMapper.getList(com.sy.mybatis.domain.Page,java.lang.String)
+2023-05-03 22:58:32.257 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 22:58:32.364 [http-nio-8088-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-05-03 22:58:32.460 [http-nio-8088-exec-2] INFO  com.sy.mybatis.interceptor.PaginationInterceptor - sql info：SELECT * FROM person limit 0, 10
+2023-05-03 22:58:32.476 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - method response: [Person(name=sy, age=25, birthday=Wed May 03 00:03:09 CST 2023), Person(name=zhangSan, age=25, birthday=Wed May 03 11:34:00 CST 2023), Person(name=liSi, age=22, birthday=Wed May 03 11:34:00 CST 2023), Person(name=sy, age=25, birthday=Wed May 03 11:30:54 CST 2023)]
+2023-05-03 22:58:32.477 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - method response: Page(isFirstPage=true, isLastPage=true, pageCount=4, totalPage=1, prePage=1, nextPage=1)
+2023-05-03 22:58:32.478 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - method response: Result(data=Page(isFirstPage=true, isLastPage=true, pageCount=4, totalPage=1, prePage=1, nextPage=1), message=成功, code=1)
+2023-05-03 23:00:51.098 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - url: /test/delete/154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:00:51.098 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - method: public com.sy.util.Result com.sy.base.BaseController.delete(java.lang.String)
+2023-05-03 23:00:51.098 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:00:51.099 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - url: /test/delete/154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:00:51.099 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - method: public java.lang.String com.sy.base.BaseService.delete(java.lang.String)
+2023-05-03 23:00:51.099 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:00:51.100 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - url: /test/delete/154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:00:51.100 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - method: public abstract java.lang.Integer com.sy.base.BaseMapper.delete(java.lang.String,java.lang.String)
+2023-05-03 23:00:51.100 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:00:51.277 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - method response: 0
+2023-05-03 23:00:51.277 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - method response: 154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:00:51.277 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - method response: Result(data=154e503ab34045ba9e1cdbb3e7303a7b, message=删除数据成功！, code=1)
+2023-05-03 23:00:57.258 [http-nio-8088-exec-7] INFO  com.sy.config.AopLogger - url: /test/get/154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:00:57.258 [http-nio-8088-exec-7] INFO  com.sy.config.AopLogger - method: public com.sy.util.Result com.sy.base.BaseController.get(java.lang.String)
+2023-05-03 23:00:57.258 [http-nio-8088-exec-7] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:00:57.258 [http-nio-8088-exec-7] INFO  com.sy.config.AopLogger - url: /test/get/154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:00:57.258 [http-nio-8088-exec-7] INFO  com.sy.config.AopLogger - method: public java.lang.Object com.sy.base.BaseService.getObject(java.lang.String)
+2023-05-03 23:00:57.259 [http-nio-8088-exec-7] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:00:57.259 [http-nio-8088-exec-7] INFO  com.sy.config.AopLogger - url: /test/get/154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:00:57.259 [http-nio-8088-exec-7] INFO  com.sy.config.AopLogger - method: public abstract java.lang.Object com.sy.base.BaseMapper.getObject(java.lang.Object,java.lang.String)
+2023-05-03 23:00:57.259 [http-nio-8088-exec-7] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:00:57.262 [http-nio-8088-exec-7] INFO  com.sy.config.AopLogger - method response: null
+2023-05-03 23:00:57.262 [http-nio-8088-exec-7] INFO  com.sy.config.AopLogger - method response: null
+2023-05-03 23:00:57.262 [http-nio-8088-exec-7] INFO  com.sy.config.AopLogger - method response: Result(data=null, message=成功, code=1)
+2023-05-03 23:01:01.128 [http-nio-8088-exec-6] INFO  com.sy.config.AopLogger - url: /test/getList
+2023-05-03 23:01:01.129 [http-nio-8088-exec-6] INFO  com.sy.config.AopLogger - method: public com.sy.util.Result com.sy.base.BaseController.getList(com.sy.mybatis.domain.Page)
+2023-05-03 23:01:01.130 [http-nio-8088-exec-6] INFO  com.sy.config.AopLogger - total time: 1ms
+2023-05-03 23:01:01.130 [http-nio-8088-exec-6] INFO  com.sy.config.AopLogger - url: /test/getList
+2023-05-03 23:01:01.130 [http-nio-8088-exec-6] INFO  com.sy.config.AopLogger - method: public com.sy.mybatis.domain.SimplePage com.sy.base.BaseService.getList(com.sy.mybatis.domain.Page)
+2023-05-03 23:01:01.130 [http-nio-8088-exec-6] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:01:01.130 [http-nio-8088-exec-6] INFO  com.sy.config.AopLogger - url: /test/getList
+2023-05-03 23:01:01.130 [http-nio-8088-exec-6] INFO  com.sy.config.AopLogger - method: public abstract java.util.List com.sy.base.BaseMapper.getList(com.sy.mybatis.domain.Page,java.lang.String)
+2023-05-03 23:01:01.130 [http-nio-8088-exec-6] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:01:01.137 [http-nio-8088-exec-6] INFO  com.sy.mybatis.interceptor.PaginationInterceptor - sql info：SELECT * FROM person limit 0, 10
+2023-05-03 23:01:01.141 [http-nio-8088-exec-6] INFO  com.sy.config.AopLogger - method response: [Person(name=sy, age=25, birthday=Wed May 03 00:03:09 CST 2023), Person(name=zhangSan, age=25, birthday=Wed May 03 11:34:00 CST 2023), Person(name=liSi, age=22, birthday=Wed May 03 11:34:00 CST 2023), Person(name=sy, age=25, birthday=Wed May 03 11:30:54 CST 2023)]
+2023-05-03 23:01:01.141 [http-nio-8088-exec-6] INFO  com.sy.config.AopLogger - method response: Page(isFirstPage=true, isLastPage=true, pageCount=4, totalPage=1, prePage=1, nextPage=1)
+2023-05-03 23:01:01.141 [http-nio-8088-exec-6] INFO  com.sy.config.AopLogger - method response: Result(data=Page(isFirstPage=true, isLastPage=true, pageCount=4, totalPage=1, prePage=1, nextPage=1), message=成功, code=1)
+2023-05-03 23:01:06.481 [http-nio-8088-exec-9] INFO  com.sy.config.AopLogger - url: /test/get/e141a20e25f34db980957a9038254f23
+2023-05-03 23:01:06.482 [http-nio-8088-exec-9] INFO  com.sy.config.AopLogger - method: public com.sy.util.Result com.sy.base.BaseController.get(java.lang.String)
+2023-05-03 23:01:06.482 [http-nio-8088-exec-9] INFO  com.sy.config.AopLogger - total time: 1ms
+2023-05-03 23:01:06.483 [http-nio-8088-exec-9] INFO  com.sy.config.AopLogger - url: /test/get/e141a20e25f34db980957a9038254f23
+2023-05-03 23:01:06.483 [http-nio-8088-exec-9] INFO  com.sy.config.AopLogger - method: public java.lang.Object com.sy.base.BaseService.getObject(java.lang.String)
+2023-05-03 23:01:06.483 [http-nio-8088-exec-9] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:01:06.483 [http-nio-8088-exec-9] INFO  com.sy.config.AopLogger - url: /test/get/e141a20e25f34db980957a9038254f23
+2023-05-03 23:01:06.483 [http-nio-8088-exec-9] INFO  com.sy.config.AopLogger - method: public abstract java.lang.Object com.sy.base.BaseMapper.getObject(java.lang.Object,java.lang.String)
+2023-05-03 23:01:06.483 [http-nio-8088-exec-9] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:01:06.487 [http-nio-8088-exec-9] INFO  com.sy.config.AopLogger - method response: Person(name=sy, age=25, birthday=Wed May 03 11:30:54 CST 2023)
+2023-05-03 23:01:06.487 [http-nio-8088-exec-9] INFO  com.sy.config.AopLogger - method response: Person(name=sy, age=25, birthday=Wed May 03 11:30:54 CST 2023)
+2023-05-03 23:01:06.487 [http-nio-8088-exec-9] INFO  com.sy.config.AopLogger - method response: Result(data=Person(name=sy, age=25, birthday=Wed May 03 11:30:54 CST 2023), message=成功, code=1)
+2023-05-03 23:01:18.182 [http-nio-8088-exec-8] INFO  com.sy.config.AopLogger - url: /test/get/154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:01:18.182 [http-nio-8088-exec-8] INFO  com.sy.config.AopLogger - method: public com.sy.util.Result com.sy.base.BaseController.get(java.lang.String)
+2023-05-03 23:01:18.182 [http-nio-8088-exec-8] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:01:18.183 [http-nio-8088-exec-8] INFO  com.sy.config.AopLogger - url: /test/get/154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:01:18.184 [http-nio-8088-exec-8] INFO  com.sy.config.AopLogger - method: public java.lang.Object com.sy.base.BaseService.getObject(java.lang.String)
+2023-05-03 23:01:18.184 [http-nio-8088-exec-8] INFO  com.sy.config.AopLogger - total time: 1ms
+2023-05-03 23:01:18.185 [http-nio-8088-exec-8] INFO  com.sy.config.AopLogger - url: /test/get/154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:01:18.185 [http-nio-8088-exec-8] INFO  com.sy.config.AopLogger - method: public abstract java.lang.Object com.sy.base.BaseMapper.getObject(java.lang.Object,java.lang.String)
+2023-05-03 23:01:18.185 [http-nio-8088-exec-8] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:01:18.188 [http-nio-8088-exec-8] INFO  com.sy.config.AopLogger - method response: null
+2023-05-03 23:01:18.188 [http-nio-8088-exec-8] INFO  com.sy.config.AopLogger - method response: null
+2023-05-03 23:01:18.188 [http-nio-8088-exec-8] INFO  com.sy.config.AopLogger - method response: Result(data=null, message=成功, code=1)
+2023-05-03 23:01:53.764 [http-nio-8088-exec-10] INFO  com.sy.config.AopLogger - url: /test/get/154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:01:53.765 [http-nio-8088-exec-10] INFO  com.sy.config.AopLogger - method: public com.sy.util.Result com.sy.base.BaseController.get(java.lang.String)
+2023-05-03 23:01:53.765 [http-nio-8088-exec-10] INFO  com.sy.config.AopLogger - total time: 1ms
+2023-05-03 23:01:53.765 [http-nio-8088-exec-10] INFO  com.sy.config.AopLogger - url: /test/get/154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:01:53.765 [http-nio-8088-exec-10] INFO  com.sy.config.AopLogger - method: public java.lang.Object com.sy.base.BaseService.getObject(java.lang.String)
+2023-05-03 23:01:53.766 [http-nio-8088-exec-10] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:02:09.272 [http-nio-8088-exec-10] INFO  com.sy.config.AopLogger - url: /test/get/154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:02:09.272 [http-nio-8088-exec-10] INFO  com.sy.config.AopLogger - method: public abstract java.lang.Object com.sy.base.BaseMapper.getObject(java.lang.Object,java.lang.String)
+2023-05-03 23:02:09.272 [http-nio-8088-exec-10] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:02:09.275 [http-nio-8088-exec-10] INFO  com.sy.config.AopLogger - method response: null
+2023-05-03 23:02:22.482 [http-nio-8088-exec-10] INFO  com.sy.config.AopLogger - url: /test/get/154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:02:22.483 [http-nio-8088-exec-10] INFO  com.sy.config.AopLogger - method: public abstract java.lang.Object com.sy.base.BaseMapper.getObject(java.lang.Object,java.lang.String)
+2023-05-03 23:02:22.483 [http-nio-8088-exec-10] INFO  com.sy.config.AopLogger - total time: 1ms
+2023-05-03 23:02:22.486 [http-nio-8088-exec-10] INFO  com.sy.config.AopLogger - method response: null
+2023-05-03 23:02:22.486 [http-nio-8088-exec-10] INFO  com.sy.config.AopLogger - method response: null
+2023-05-03 23:02:22.486 [http-nio-8088-exec-10] INFO  com.sy.config.AopLogger - method response: Result(data=null, message=成功, code=1)
+2023-05-03 23:05:27.020 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2023-05-03 23:05:27.024 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2023-05-03 23:05:32.741 [main] INFO  com.sy.SyApplication - Starting SyApplication using Java 1.8.0_301 on shuYan with PID 17336 (D:\Project\sy\target\classes started by 15495 in D:\Project\sy)
+2023-05-03 23:05:32.744 [main] INFO  com.sy.SyApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-03 23:05:34.082 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2023-05-03 23:05:34.093 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2023-05-03 23:05:34.094 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-03 23:05:34.094 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-05-03 23:05:34.258 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-03 23:05:34.258 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1456 ms
+2023-05-03 23:05:34.950 [main] INFO  com.sy.config.AopLogger - method: public void com.sy.config.Config.configureMessageConverters(java.util.List)
+2023-05-03 23:05:34.951 [main] INFO  com.sy.config.AopLogger - total time: 3ms
+2023-05-03 23:05:34.955 [main] INFO  com.sy.config.AopLogger - method response: null
+2023-05-03 23:05:35.088 [main] INFO  com.sy.config.AopLogger - method: public void com.sy.config.Config.addCorsMappings(org.springframework.web.servlet.config.annotation.CorsRegistry)
+2023-05-03 23:05:35.088 [main] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:05:35.089 [main] INFO  com.sy.config.AopLogger - method response: null
+2023-05-03 23:05:35.330 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2023-05-03 23:05:35.350 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2023-05-03 23:05:35.360 [main] INFO  com.sy.SyApplication - Started SyApplication in 3.294 seconds (JVM running for 4.517)
+2023-05-03 23:05:35.362 [main] INFO  com.sy.config.AopLogger - method: public void com.sy.config.RunnerConfig.run(org.springframework.boot.ApplicationArguments) throws java.lang.Exception
+2023-05-03 23:05:35.363 [main] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:05:35.508 [main] INFO  com.sy.core.DataBase - mysql init success...
+2023-05-03 23:05:35.508 [main] INFO  com.sy.config.AopLogger - method response: null
+2023-05-03 23:05:43.643 [http-nio-8088-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-03 23:05:43.644 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-03 23:05:43.645 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-05-03 23:05:43.689 [http-nio-8088-exec-1] INFO  com.sy.config.AopLogger - url: /test/get/154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:05:43.689 [http-nio-8088-exec-1] INFO  com.sy.config.AopLogger - method: public com.sy.util.Result com.sy.base.BaseController.get(java.lang.String)
+2023-05-03 23:05:43.689 [http-nio-8088-exec-1] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:05:45.606 [http-nio-8088-exec-1] INFO  com.sy.config.AopLogger - url: /test/get/154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:05:45.608 [http-nio-8088-exec-1] INFO  com.sy.config.AopLogger - method: public java.lang.Object com.sy.base.BaseService.getObject(java.lang.String)
+2023-05-03 23:05:45.609 [http-nio-8088-exec-1] INFO  com.sy.config.AopLogger - total time: 2ms
+2023-05-03 23:05:49.514 [http-nio-8088-exec-1] INFO  com.sy.config.AopLogger - url: /test/get/154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:05:49.515 [http-nio-8088-exec-1] INFO  com.sy.config.AopLogger - method: public abstract java.lang.Object com.sy.base.BaseMapper.getObject(java.lang.Object,java.lang.String)
+2023-05-03 23:05:49.516 [http-nio-8088-exec-1] INFO  com.sy.config.AopLogger - total time: 1ms
+2023-05-03 23:05:50.065 [http-nio-8088-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-05-03 23:05:50.885 [http-nio-8088-exec-1] INFO  com.sy.config.AopLogger - method response: null
+2023-05-03 23:05:54.625 [http-nio-8088-exec-1] INFO  com.sy.config.AopLogger - method response: null
+2023-05-03 23:05:54.627 [http-nio-8088-exec-1] INFO  com.sy.config.AopLogger - method response: Result(data=null, message=没有当前id数据！, code=0)
+2023-05-03 23:06:05.629 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - url: /test/get/154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:06:05.629 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - method: public com.sy.util.Result com.sy.base.BaseController.get(java.lang.String)
+2023-05-03 23:06:05.629 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:06:07.524 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - url: /test/get/154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:06:07.528 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - method: public java.lang.Object com.sy.base.BaseService.getObject(java.lang.String)
+2023-05-03 23:06:07.529 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - total time: 4ms
+2023-05-03 23:06:07.530 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - url: /test/get/154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:06:07.532 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - method: public abstract java.lang.Object com.sy.base.BaseMapper.getObject(java.lang.Object,java.lang.String)
+2023-05-03 23:06:07.533 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - total time: 2ms
+2023-05-03 23:06:07.544 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - method response: null
+2023-05-03 23:06:07.545 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - method response: null
+2023-05-03 23:06:09.976 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - method response: Result(data=null, message=没有当前id数据！, code=0)
+2023-05-03 23:06:22.768 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - url: /test/get/682f0476c84a4991adfe2714d27dafb6
+2023-05-03 23:06:22.769 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - method: public com.sy.util.Result com.sy.base.BaseController.get(java.lang.String)
+2023-05-03 23:06:22.769 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - total time: 1ms
+2023-05-03 23:06:24.886 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - url: /test/get/682f0476c84a4991adfe2714d27dafb6
+2023-05-03 23:06:24.889 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - method: public java.lang.Object com.sy.base.BaseService.getObject(java.lang.String)
+2023-05-03 23:06:24.891 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - total time: 3ms
+2023-05-03 23:06:24.892 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - url: /test/get/682f0476c84a4991adfe2714d27dafb6
+2023-05-03 23:06:24.893 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - method: public abstract java.lang.Object com.sy.base.BaseMapper.getObject(java.lang.Object,java.lang.String)
+2023-05-03 23:06:24.894 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - total time: 1ms
+2023-05-03 23:06:24.928 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - method response: Person(name=liSi, age=22, birthday=Wed May 03 11:34:00 CST 2023)
+2023-05-03 23:06:24.929 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - method response: Person(name=liSi, age=22, birthday=Wed May 03 11:34:00 CST 2023)
+2023-05-03 23:06:31.591 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - method response: Result(data=null, message=成功, code=1)
+2023-05-03 23:06:36.311 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - url: /test/get/682f0476c84a4991adfe2714d27dafb6
+2023-05-03 23:06:36.312 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - method: public com.sy.util.Result com.sy.base.BaseController.get(java.lang.String)
+2023-05-03 23:06:36.312 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - total time: 1ms
+2023-05-03 23:06:36.312 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - url: /test/get/682f0476c84a4991adfe2714d27dafb6
+2023-05-03 23:06:36.312 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - method: public java.lang.Object com.sy.base.BaseService.getObject(java.lang.String)
+2023-05-03 23:06:36.312 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:06:36.313 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - url: /test/get/682f0476c84a4991adfe2714d27dafb6
+2023-05-03 23:06:36.313 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - method: public abstract java.lang.Object com.sy.base.BaseMapper.getObject(java.lang.Object,java.lang.String)
+2023-05-03 23:06:36.313 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:06:36.317 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - method response: Person(name=liSi, age=22, birthday=Wed May 03 11:34:00 CST 2023)
+2023-05-03 23:06:36.317 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - method response: Person(name=liSi, age=22, birthday=Wed May 03 11:34:00 CST 2023)
+2023-05-03 23:06:36.317 [http-nio-8088-exec-5] INFO  com.sy.config.AopLogger - method response: Result(data=null, message=成功, code=1)
+2023-05-03 23:06:47.810 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2023-05-03 23:06:47.817 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2023-05-03 23:07:01.697 [main] INFO  com.sy.SyApplication - Starting SyApplication using Java 1.8.0_301 on shuYan with PID 11904 (D:\Project\sy\target\classes started by 15495 in D:\Project\sy)
+2023-05-03 23:07:01.701 [main] INFO  com.sy.SyApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-03 23:07:03.471 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2023-05-03 23:07:03.487 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2023-05-03 23:07:03.488 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-03 23:07:03.488 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-05-03 23:07:03.591 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-03 23:07:03.591 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1806 ms
+2023-05-03 23:07:04.507 [main] INFO  com.sy.config.AopLogger - method: public void com.sy.config.Config.configureMessageConverters(java.util.List)
+2023-05-03 23:07:04.508 [main] INFO  com.sy.config.AopLogger - total time: 3ms
+2023-05-03 23:07:04.518 [main] INFO  com.sy.config.AopLogger - method response: null
+2023-05-03 23:07:04.612 [main] INFO  com.sy.config.AopLogger - method: public void com.sy.config.Config.addCorsMappings(org.springframework.web.servlet.config.annotation.CorsRegistry)
+2023-05-03 23:07:04.612 [main] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:07:04.614 [main] INFO  com.sy.config.AopLogger - method response: null
+2023-05-03 23:07:04.925 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2023-05-03 23:07:04.954 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2023-05-03 23:07:04.965 [main] INFO  com.sy.SyApplication - Started SyApplication in 4.143 seconds (JVM running for 12.257)
+2023-05-03 23:07:04.969 [main] INFO  com.sy.config.AopLogger - method: public void com.sy.config.RunnerConfig.run(org.springframework.boot.ApplicationArguments) throws java.lang.Exception
+2023-05-03 23:07:04.969 [main] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:07:05.152 [main] INFO  com.sy.core.DataBase - mysql init success...
+2023-05-03 23:07:05.153 [main] INFO  com.sy.config.AopLogger - method response: null
+2023-05-03 23:07:13.669 [http-nio-8088-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-03 23:07:13.670 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-05-03 23:07:13.672 [http-nio-8088-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-05-03 23:07:13.732 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - url: /test/get/682f0476c84a4991adfe2714d27dafb6
+2023-05-03 23:07:13.733 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - method: public com.sy.util.Result com.sy.base.BaseController.get(java.lang.String)
+2023-05-03 23:07:13.733 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - total time: 1ms
+2023-05-03 23:07:13.744 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - url: /test/get/682f0476c84a4991adfe2714d27dafb6
+2023-05-03 23:07:13.744 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - method: public java.lang.Object com.sy.base.BaseService.getObject(java.lang.String)
+2023-05-03 23:07:13.744 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:07:13.757 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - url: /test/get/682f0476c84a4991adfe2714d27dafb6
+2023-05-03 23:07:13.757 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - method: public abstract java.lang.Object com.sy.base.BaseMapper.getObject(java.lang.Object,java.lang.String)
+2023-05-03 23:07:13.758 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:07:14.005 [http-nio-8088-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-05-03 23:07:14.150 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - method response: Person(name=liSi, age=22, birthday=Wed May 03 11:34:00 CST 2023)
+2023-05-03 23:07:14.151 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - method response: Person(name=liSi, age=22, birthday=Wed May 03 11:34:00 CST 2023)
+2023-05-03 23:07:14.158 [http-nio-8088-exec-2] INFO  com.sy.config.AopLogger - method response: Result(data=Person(name=liSi, age=22, birthday=Wed May 03 11:34:00 CST 2023), message=成功, code=1)
+2023-05-03 23:07:17.519 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - url: /test/get/154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:07:17.520 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - method: public com.sy.util.Result com.sy.base.BaseController.get(java.lang.String)
+2023-05-03 23:07:17.520 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - total time: 1ms
+2023-05-03 23:07:17.520 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - url: /test/get/154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:07:17.520 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - method: public java.lang.Object com.sy.base.BaseService.getObject(java.lang.String)
+2023-05-03 23:07:17.520 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:07:17.521 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - url: /test/get/154e503ab34045ba9e1cdbb3e7303a7b
+2023-05-03 23:07:17.521 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - method: public abstract java.lang.Object com.sy.base.BaseMapper.getObject(java.lang.Object,java.lang.String)
+2023-05-03 23:07:17.521 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:07:17.524 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - method response: null
+2023-05-03 23:07:17.525 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - method response: null
+2023-05-03 23:07:17.525 [http-nio-8088-exec-3] INFO  com.sy.config.AopLogger - method response: Result(data=null, message=没有当前id数据！, code=0)
+2023-05-03 23:07:20.293 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - url: /test/get/682f0476c84a4991adfe2714d27dafb6
+2023-05-03 23:07:20.293 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - method: public com.sy.util.Result com.sy.base.BaseController.get(java.lang.String)
+2023-05-03 23:07:20.293 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:07:20.294 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - url: /test/get/682f0476c84a4991adfe2714d27dafb6
+2023-05-03 23:07:20.294 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - method: public java.lang.Object com.sy.base.BaseService.getObject(java.lang.String)
+2023-05-03 23:07:20.294 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:07:20.294 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - url: /test/get/682f0476c84a4991adfe2714d27dafb6
+2023-05-03 23:07:20.294 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - method: public abstract java.lang.Object com.sy.base.BaseMapper.getObject(java.lang.Object,java.lang.String)
+2023-05-03 23:07:20.295 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - total time: 0ms
+2023-05-03 23:07:20.299 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - method response: Person(name=liSi, age=22, birthday=Wed May 03 11:34:00 CST 2023)
+2023-05-03 23:07:20.299 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - method response: Person(name=liSi, age=22, birthday=Wed May 03 11:34:00 CST 2023)
+2023-05-03 23:07:20.299 [http-nio-8088-exec-4] INFO  com.sy.config.AopLogger - method response: Result(data=Person(name=liSi, age=22, birthday=Wed May 03 11:34:00 CST 2023), message=成功, code=1)

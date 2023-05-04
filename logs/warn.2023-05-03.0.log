@@ -1,0 +1,1 @@
+2023-05-03 23:00:51.248 [http-nio-8088-exec-5] WARN  com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/base?useSSL=false, version : 1.2.8, lastPacketReceivedIdleMillis : 138742
