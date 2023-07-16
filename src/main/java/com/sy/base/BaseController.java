@@ -11,18 +11,17 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import javax.annotation.Resource;
 import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.ParameterizedType;
 
 /**
  * @Author: shuYan
  * @Date: 2023/5/3 14:17
  * @Descript:
  */
-@Controller
 public class BaseController<T> {
 
-    @Autowired
+    @Resource
     private BaseService<T> baseService;
 
     @GetMapping("/get/{id}")

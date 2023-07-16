@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
+import javax.annotation.Resource;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
@@ -18,10 +19,9 @@ import java.util.List;
  * @Date: 2023/5/2 20:13
  * @Descript: 基础service类
  */
-@Service
 public class BaseService<T> {
 
-    @Autowired
+    @Resource
     private BaseMapper baseMapper;
 
     public SimplePage getList(Page page) {

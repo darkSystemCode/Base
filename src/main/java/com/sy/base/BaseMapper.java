@@ -13,7 +13,6 @@ import java.util.List;
  * @Date: 2023/5/2 20:04
  * @Descript: 基础数据库类，选用注解式SQL，可以不用考虑XML的resultType问题
  */
-@Repository
 public interface BaseMapper<T> {
 
     /**

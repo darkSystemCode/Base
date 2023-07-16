@@ -1,0 +1,21 @@
+server:
+  port: 8089
+
+spring:
+  application:
+    name: sy
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/base?useSSL=false
+    username: root
+    password: 154954264
+
+mybatis:
+  type-aliases-package: com.sy.entity
+  mapper-locations: classpath:mapper/*Mapper.xml
+  config-location: classpath:mybatis-config.xml
+
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    com.sy.base: info
